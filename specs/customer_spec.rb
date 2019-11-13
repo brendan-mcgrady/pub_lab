@@ -11,11 +11,16 @@ class CustomerTest < MiniTest::Test
   end
 
   def test_create_customer__has_name
-    assert_equal("Brendan", @cust_name.name)
+    assert_equal("Brendan", @cust_name.cust_name)
   end
 
   def test_create_cust_wallet__has_cash
-    assert_equal(50, @cust_wallet.wallet)
+    assert_equal(50, @cust_wallet.cust_wallet)
+  end
+
+  def test_can_remove_cash_from_wallet
+    drink_price = 3
+    assert_equal(47, @cust_wallet.remove_cash_from_wallet(drink_price))
   end
 
 end
