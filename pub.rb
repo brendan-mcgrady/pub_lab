@@ -8,4 +8,8 @@ class Pub
     @drinks = drinks
   end
 
+  def add_cash_to_till(drink_price)
+    @till += drink_price
+  end
+
 end
