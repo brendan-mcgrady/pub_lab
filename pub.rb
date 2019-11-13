@@ -12,4 +12,8 @@ class Pub
     @till += drink_price
   end
 
+  def remove_cash_from_till(drink_price)
+    @till -= drink_price 
+  end
+
 end

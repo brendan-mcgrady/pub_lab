@@ -28,9 +28,9 @@ class PubTest < MiniTest::Test
     assert_equal(103, @till.add_cash_to_till(drink_price))
   end
 
-  # def test_can_remove_cash_from_till
-  #   drink_price = 7
-  #   assert_equal(93, @till.add_or_remove_cash_to_till(drink_price))
-  # end
+  def test_can_remove_cash_from_till
+    drink_price = 7
+    assert_equal(93, @till.remove_cash_from_till(drink_price))
+  end
 
 end
